@@ -1,0 +1,126 @@
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wrapper .header {
+    width: 100%;
+    height: 40px;
+    background: #eee;
+}
+
+.body {
+    width: 100%;
+    height: 600px;
+    background: #ccc;
+    font-size: 0;
+}
+
+.wrapper .body ul {
+    font-size: 16px;
+    margin: 0;
+}
+
+.left {
+    width: 300px;
+    min-height: 600px;
+    background: #cccccc;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.main {
+    width: 660px;
+    margin-left: 40px;
+    min-height: 600px;
+    background: #eee;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    background: #ccc;
+    width: 80px;
+    min-height: 100px;
+    text-decoration: none;
+}
+
+.item img {
+    display: block;
+    width: 80px;
+    height: auto;
+}
+
+.item span {
+    color: #fff;
+}
+
+.title {
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+.wrapper .body .item .price {
+    margin-top: 5px;
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+
+.wrapper .body .item .buy {
+    margin-top: 5px;
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+
+.wrapper .body .item .full {
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.cart {
+    background: #eee;
+    font-size: 14px;
+    border: 1px solid #000;
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+.cart .oformit, .cart .summa {
+    display: block;
+}
+
+.order .row {
+    display: block;
+    width: 100%;
+    margin: 20px 20px;
+}
+
+.order .row img, .order .row .name, .order .row .price, .order .row .remove {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    font-size: 14px;
+}
+
+.order .row img {
+    max-height: 100px;
+    width: auto;
+    margin-right: 30px;
+}
+
+.order .row .remove {
+    width: 10px;
+    text-decoration: underline;
+    color : blue;
+    cursor: pointer;
+}

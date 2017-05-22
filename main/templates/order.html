@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>Order</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header"><h1>Оформление заказа</h1></div>
+    <div class="order"></div>
+    <div class="total">Общая сумма: <span class="summa"></span> грн</div>
+    {#    <a href="#" class="zakaz">Оформить заказ</a>#}
+{#    <br>#}
+{#    <input type="text" name="name" title="Имя" placeholder="Имя покупателя">#}
+{#    <input type="text" name="phone" title="Телефон" placeholder="Телефон покупателя">#}
+{#    <button class="checkout">Оформить заказ</button>#}
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="{% static 'jquery-cookie.js' %}"></script>
+<script src="{% static 'order.js' %}"></script>
+
+</body>
+</html>

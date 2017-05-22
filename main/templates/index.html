@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>Catalog</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header"><h1>{{ category.name }}</h1></div>
+    <div class="body">
+        <div class="left">
+            <br>
+            <ul>
+                <li><a href="/">Главная</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            {% for tovar in tovary %}
+                <a class="item" href="/item/{{ tovar.alias }}/">
+                    <img src="{{ tovar.image }}" alt="">
+                    <span class="title">{{ tovar.name }}</span>
+                    <span class="price">{{ tovar.price }} грн.</span>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="cart">В корзине товаров на <span class="summa">0</span>
+    <br><a class="oformit" href="/order/">Оформить заказ</a>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="{% static 'jquery-cookie.js' %}"></script>
+<script src="{% static 'script.js' %}"></script>
+
+</body>
+</html>
